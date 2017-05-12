@@ -1,17 +1,9 @@
-import React from 'react'
-import { render } from 'react-dom'
-import Welcome from './Components/Welcome'
-import './App.scss'
+const css = require('./app.scss');
 
-const App = React.createClass({
-  render () {
-    return (
-      <div>
-        Financial Forecaster is now live!
-        <Welcome />
-      </div>
-    )
-  }
-})
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-render(<App />, document.getElementById('root'))
+ReactDOM.render(
+  <h1>Hello, world!</h1>,
+  document.getElementById('root')
+);
