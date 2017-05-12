@@ -21,6 +21,13 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'eslint-loader',
+        include: path.resolve(__dirname, 'src'),
+        exclude: /node_modules/
+      },
+      {
         test: /\.scss$/,
         use: cssConfig // changes based on production or development
       },
